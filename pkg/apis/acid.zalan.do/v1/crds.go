@@ -657,9 +657,6 @@ var PostgresCRDResourceValidation = apiextv1.CustomResourceValidation{
 							"cluster": {
 								Type: "string",
 							},
-							"s3_wal_path": {
-								Type: "string",
-							},
 							"uid": {
 								Type:   "string",
 								Format: "uuid",
@@ -692,6 +689,12 @@ var PostgresCRDResourceValidation = apiextv1.CustomResourceValidation{
 										Raw: []byte(`"13"`),
 									},
 								},
+							},
+							"s3_wal_path": {
+								Type: "string",
+							},
+							"gs_wal_path": {
+								Type: "string",
 							},
 						},
 					},
