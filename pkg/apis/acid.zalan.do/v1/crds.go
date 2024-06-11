@@ -1715,6 +1715,9 @@ var OperatorConfigCRDResourceValidation = apiextv1.CustomResourceValidation{
 							"wal_s3_bucket": {
 								Type: "string",
 							},
+							"wal_bucket_scope_prefix": {
+								Type: "string",
+							},
 						},
 					},
 					"logical_backup": {

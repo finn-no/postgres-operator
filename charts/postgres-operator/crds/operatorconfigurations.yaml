@@ -491,6 +491,8 @@ spec:
                     type: string
                   wal_s3_bucket:
                     type: string
+                  wal_bucket_scope_prefix:
+                    type: string
               logical_backup:
                 type: object
                 properties:

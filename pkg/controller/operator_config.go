@@ -166,6 +166,7 @@ func (c *Controller) importConfigurationFromCRD(fromCRD *acidv1.OperatorConfigur
 
 	// AWS or GCP config
 	result.WALES3Bucket = fromCRD.AWSGCP.WALES3Bucket
+	result.WALBucketScopePrefix = fromCRD.AWSGCP.WALBucketScopePrefix
 	result.AWSRegion = fromCRD.AWSGCP.AWSRegion
 	result.LogS3Bucket = fromCRD.AWSGCP.LogS3Bucket
 	result.KubeIAMRole = fromCRD.AWSGCP.KubeIAMRole

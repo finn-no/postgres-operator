@@ -185,6 +185,7 @@ type Config struct {
 	DbHostedZone                             string            `name:"db_hosted_zone" default:"db.example.com"`
 	AWSRegion                                string            `name:"aws_region" default:"eu-central-1"`
 	WALES3Bucket                             string            `name:"wal_s3_bucket"`
+	WALBucketScopePrefix                     string            `name:"wal_bucket_scope_prefix"`
 	LogS3Bucket                              string            `name:"log_s3_bucket"`
 	KubeIAMRole                              string            `name:"kube_iam_role"`
 	WALGSBucket                              string            `name:"wal_gs_bucket"`
